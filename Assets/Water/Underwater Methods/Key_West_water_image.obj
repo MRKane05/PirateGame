@@ -1,0 +1,31 @@
+# 3ds Max Wavefront OBJ Exporter v0.97b - (c)2007 guruware
+# File Created: 14.01.2013 14:41:55
+
+mtllib Key_West_water_image.mtl
+
+#
+# object Plane001
+#
+
+v  -50434.1719 35526.0234 -1.0000
+v  -50434.1719 -18701.3848 -1.0000
+v  31824.6914 35526.0234 -1.0000
+v  31824.6914 -18701.3848 -1.0000
+# 4 vertices
+
+vn 0.0000 0.0000 1.0000
+# 1 vertex normals
+
+vt 0.0000 1.0000 0.0000
+vt 0.0000 0.0000 0.0000
+vt 1.0000 1.0000 0.0000
+vt 1.0000 0.0000 0.0000
+# 4 texture coords
+
+g Plane001
+usemtl 02___Default
+s 1
+f 1/1/1 2/2/1 3/3/1 
+f 4/4/1 3/3/1 2/2/1 
+# 2 faces
+

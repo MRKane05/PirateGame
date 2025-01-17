@@ -1,0 +1,145 @@
+fileFormatVersion: 2
+guid: 3b624d94f01ce6f4c80b6fb03e5c528e
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: cartoon_fluyt_body
+    100004: cartoon_fluyt_ropes
+    100006: cartoon_fluyt_sails
+    100008: default
+    400000: //RootNode
+    400002: cartoon_fluyt_body
+    400004: cartoon_fluyt_ropes
+    400006: cartoon_fluyt_sails
+    400008: default
+    2100000: cartoon_fluyt_bodyMat
+    2100002: cartoon_fluyt_ropesMat
+    2100004: cartoon_fluyt_sailsMat
+    2100006: cartoon_fluyt_ropes
+    2100008: cartoon_fluyt_body
+    2100010: cartoon_fluyt_sails
+    2300000: cartoon_fluyt_body
+    2300002: cartoon_fluyt_ropes
+    2300004: cartoon_fluyt_sails
+    2300006: default
+    3300000: cartoon_fluyt_body
+    3300002: cartoon_fluyt_ropes
+    3300004: cartoon_fluyt_sails
+    3300006: default
+    4300000: cartoon_fluyt_body
+    4300002: cartoon_fluyt_ropes
+    4300004: cartoon_fluyt_sails
+    4300006: default
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cartoon_fluyt_body
+    second: {fileID: 2100000, guid: c1b596d3cf7eac942a4f5a26b72a5c14, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cartoon_fluyt_bodyMat
+    second: {fileID: 2100000, guid: c1b596d3cf7eac942a4f5a26b72a5c14, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cartoon_fluyt_ropes
+    second: {fileID: 2100000, guid: 3e8cbfb815e35b7439d801b9284655ca, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cartoon_fluyt_ropesMat
+    second: {fileID: 2100000, guid: 3e8cbfb815e35b7439d801b9284655ca, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cartoon_fluyt_sails
+    second: {fileID: 2100000, guid: 463de1969ca1d3544bc5413d66905ea4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cartoon_fluyt_sailsMat
+    second: {fileID: 2100000, guid: 463de1969ca1d3544bc5413d66905ea4, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
