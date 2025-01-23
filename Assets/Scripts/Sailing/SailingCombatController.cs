@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
+using TMPro;
 
 [System.Serializable]
 public class EnemyBoatsDetails
@@ -41,6 +42,8 @@ public class SailingCombatController : MonoBehaviour {
 	//Our wepon buttons should be a child of this class
 	protected UI_WeaponSelectButton[] WeaponSelectButtons;
 	protected WeaponBase[] PlayerWeapons;
+	public TextMeshProUGUI weaponSelectTitle;
+	protected float weaponSelectTime = 0;
 
 	//Our enemy boats
 	protected EnemyBoatCombatBehavior[] EnemyCountdownTimers;
@@ -91,8 +94,17 @@ public class SailingCombatController : MonoBehaviour {
 		if (SelectedWeapon != thisWeapon)
 		{
 			SelectedWeapon = thisWeapon;
+			//We should get our system to display the weapon selection text
+			SetWeaponSelectionText(thisWeapon.ToString());
 		}
     }
+
+	void SetWeaponSelectionText(string newName)
+    {
+		weaponSelectTitle.text = newName + " SELECTED!";
+		weaponSelectTime = Time.time;
+		weaponSelectTitle.gameObject.SetActive(true);
+	}
 
 	void SetupEncounter()
     {
@@ -210,6 +222,17 @@ public class SailingCombatController : MonoBehaviour {
 	// Update is called once per frame
 	void Update()
 	{
+		if (Time.time < weaponSelectTime + 2f)
+        {
+			float alpha = Mathf.Clamp01(weaponSelectTime + 2f - Time.time);
+			weaponSelectTitle.color = Color.Lerp(new Color(1, 1, 1, 0), Color.white, alpha);
+        }
+        else
+        {
+			//Turn off our title
+			weaponSelectTitle.gameObject.SetActive(false);
+        }
+
 		switch (CombatState)
         {
             case enCombatState.OPENING:

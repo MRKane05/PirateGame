@@ -79,8 +79,18 @@ public class Weapon_Mortar : WeaponBase
         }
 	}
 
+	public AudioSource ourAudio;
+	public AudioClip mortarFireClip;
+
 	IEnumerator DoMortarStrike()
     {
+
+		if (!ourAudio)
+		{
+			ourAudio = gameObject.GetComponent<AudioSource>();
+		}
+		ourAudio.PlayOneShot(mortarFireClip);
+
 		bDoingFire = false;	//End this early so that the player cannot spam this weapon
 		yield return new WaitForSeconds(MortarSpawnDelay);
 		//we need to spawn mortar around the strike area

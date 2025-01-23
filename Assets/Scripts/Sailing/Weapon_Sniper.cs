@@ -94,8 +94,17 @@ public class Weapon_Sniper : WeaponBase {
 		}
 	}
 
+	public AudioSource ourAudio;
+	public AudioClip sniperFireClip;
+
 	void DoSniperShot()
     {
+		if (!ourAudio)
+        {
+			ourAudio = gameObject.GetComponent<AudioSource>();
+        }
+		ourAudio.PlayOneShot(sniperFireClip);
+
 		RaycastHit HitInfo;
 		if (Physics.Raycast(Camera.main.transform.position, Camera.main.transform.forward, out HitInfo, 1000.0f))
         {

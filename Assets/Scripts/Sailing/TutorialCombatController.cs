@@ -30,6 +30,17 @@ public class TutorialCombatController : SailingCombatController {
 
 	void Update()
 	{
+		if (Time.time < weaponSelectTime + 2f)
+		{
+			float alpha = Mathf.Clamp01(weaponSelectTime + 2f - Time.time);
+			weaponSelectTitle.color = Color.Lerp(new Color(1, 1, 1, 0), Color.white, alpha);
+		}
+		else
+		{
+			//Turn off our title
+			weaponSelectTitle.gameObject.SetActive(false);
+		}
+
 		switch (CombatState)
 		{
 			case enCombatState.OPENING:
